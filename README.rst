@@ -6,8 +6,8 @@ For AWS GPU instance:
 ```
 sudo apt install docker.io
 cd ~/pyshader-docker
-sudo docker build .
-sudo ./run.sh
+sudo docker build .  
+sudo docker run <image name>
 ```
 
 
