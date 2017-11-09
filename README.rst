@@ -5,6 +5,8 @@ Fork of : https://github.com/thewtex/docker-opengl
 For AWS GPU instance:
 ```
 sudo apt install docker.io
+cd ~/pyshader-docker
+sudo docker build .
 sudo ./run.sh
 ```
 
