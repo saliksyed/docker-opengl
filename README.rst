@@ -7,9 +7,9 @@ For AWS GPU instance:
 sudo apt install docker.io
 cd ~/pyshader-docker
 sudo docker build .  
-sudo docker run <image name>
 ```
-
+Build will output an image name
+Edit `run.sh` to use this image name instead of `thewtex/docker-opengl`
 
 ============
 A docker image that supports rendering graphical applications, including OpenGL apps.
