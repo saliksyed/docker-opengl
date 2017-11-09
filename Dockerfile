@@ -5,6 +5,15 @@ ENV DEFAULT_DOCKCROSS_IMAGE thewtex/opengl
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
   git \
+  python-dev \
+  libasound-dev \ 
+  python-pyaudio \
+  openexr \
+  libopenexr-dev \
+  zlib1g-dev \
+  libjpeg-dev \
+  freeglut3 \
+  freeglut3-dev \
   libgl1-mesa-dri \
   menu \
   net-tools \
@@ -40,6 +49,10 @@ RUN git clone https://github.com/kanaka/noVNC.git /opt/noVNC && \
   cd /opt/noVNC && \
   git checkout 6a90803feb124791960e3962e328aa3cfb729aeb && \
   ln -s vnc_auto.html index.html
+
+RUN git clone https://github.com/saliksyed/pyshader.git /opt/pyshader && \
+  cd /opt/pyshader && \
+  sudo python setup.py install
 
 # noVNC (http server) is on 6080, and the VNC server is on 5900
 EXPOSE 6080 5900
