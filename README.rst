@@ -1,5 +1,15 @@
-docker-opengl
+pyshader-docker
 =============
+Fork of : https://github.com/thewtex/docker-opengl
+
+For AWS GPU instance:
+```
+sudo apt install docker.io
+sudo ./run.sh
+```
+
+
+============
 A docker image that supports rendering graphical applications, including OpenGL apps.
 
 .. image:: https://circleci.com/gh/thewtex/docker-opengl.svg?style=svg
